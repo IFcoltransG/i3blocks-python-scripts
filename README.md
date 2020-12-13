@@ -9,7 +9,7 @@ This is the important file. It has innumerable utility functions, and is also a 
 This is for making those blocks that you can scroll over that you might be used to from the likes of py3status. That way you can unclutter your bar but still have all of the information available in the different modes you scroll through. Again, see the docstring for details.
 
 ## `chain.py`
-Simple tool for concatenating multiple commands' outputs, complete with labels. The main reason you might use this is with the swapper script above, so that each mode can have multiple components.
+Simple tool for concatenating multiple commands' outputs, complete with labels. The main reason you might use this is with the swapper script above, so that each mode can have multiple components. I doubt I have to tell you a third time that the info is in the docstring.
 
 ## `spotify.py`
 This is a Spotify script tailored to my preferences, but it should show you how easy it is to create your own i3blocks script. If you want, you can swap out all of the shell commands, and replace the last clump from `try:` onwards with `print(run("YOUR SHELL COMMAND HERE"))`. You'll have made your very own interactive i3blocks script, with minimal Python.
