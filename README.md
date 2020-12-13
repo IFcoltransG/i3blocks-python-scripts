@@ -12,4 +12,7 @@ This is for making those blocks that you can scroll over that you might be used 
 Simple tool for concatenating multiple commands' outputs, complete with labels. The main reason you might use this is with the swapper script above, so that each mode can have multiple components.
 
 ## `spotify.py`
-This is a Spotify script tailored to my preferences, but it should show you how easy it is to create your own i3blocks script. If you want, you can swap out all of the shell commands, and replace the last clump from `try:` onwards with `print(run("YOUR SHELL COMMAND HERE"))`, to make your very own interactive i3blocks script, with minimal Python.
+This is a Spotify script tailored to my preferences, but it should show you how easy it is to create your own i3blocks script. If you want, you can swap out all of the shell commands, and replace the last clump from `try:` onwards with `print(run("YOUR SHELL COMMAND HERE"))`. You'll have made your very own interactive i3blocks script, with minimal Python.
+
+## Installation
+If you pester me I'll likely put these on pypi. Otherwise, just clone the repo and start mangling it to suit your ends.
