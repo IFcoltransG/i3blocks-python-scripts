@@ -22,7 +22,7 @@ check_clicks(commands)
 
 try:
     title = run("playerctl --player=spotify metadata title")
-    artist = run("playerctl --player=spotify metadata artist")
+    artist = run("playerctl --player=spotify metadata artist") or run("playerctl --player=spotify metadata album")
     status = run("playerctl --player=spotify status")
 except CalledProcessError:
     print(colour("Spotless", "pink"))
