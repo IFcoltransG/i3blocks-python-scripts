@@ -133,6 +133,13 @@ def to_json(text, *args, **kwargs):
     return json.dumps(kwargs)
 
 
+def pango(string):
+    """
+    Escape & and < for Pango formatting
+    """
+    return string.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
 if __name__ == "__main__":
     check_clicks()
     if len(sys.argv) > 1:

@@ -7,7 +7,7 @@ Middle click for previous song, right click for next song.
 Scroll to change volume.
 """
 
-from i3blocks_helper import colour, check_clicks, run
+from i3blocks_helper import colour, check_clicks, run, pango
 from subprocess import CalledProcessError
 
 commands = {
@@ -22,7 +22,8 @@ check_clicks(commands)
 
 try:
     title = run("playerctl --player=spotify metadata title")
-    artist = run("playerctl --player=spotify metadata artist") or run("playerctl --player=spotify metadata album")
+    artist = run("playerctl --player=spotify metadata artist") or run(
+        "playerctl --player=spotify metadata album")
     status = run("playerctl --player=spotify status")
 except CalledProcessError:
     print(colour("Spotless", "pink"))
@@ -37,4 +38,5 @@ else:
     if status == "Stopped":
         print("Stopify")
     else:
-        print(colour(title, main_colour), colour(artist, accent_colour))
+        print(colour(pango(title), main_colour),
+              colour(pango(artist), accent_colour))
