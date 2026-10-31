@@ -1,3 +1,5 @@
+# [MIGRATED TO CODEBERG 2026-10-31](https://codeberg.org/IFcoltransG/i3blocks-python-scripts)
+
 # i3blocks helper scripts
 
 Python scripts for convenience when working with [i3blocks](https://github.com/vivien/i3blocks).
